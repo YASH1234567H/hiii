@@ -119,3 +119,42 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
   font-size: 16px;
   width: 40%;
 }
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar li {
+    margin: 0.5rem 0;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  textarea {
+    width: 90%;
+  }
+
+  button,
+  input[type="submit"],
+  input[type="button"],
+  input[type="reset"] {
+    width: 90%;
+    padding: 12px 0;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1,
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  main {
+    padding: 1rem;
+  }
+}
