@@ -1,0 +1,121 @@
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+  color: rgb(10, 5, 5);
+}
+
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.navbar {
+  background-color: rgba(40, 44, 52, 0.85);
+  padding: 1rem;
+  position: relative;
+  z-index: 20;
+  backdrop-filter: blur(5px);
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  margin: 0 1rem;
+}
+
+.navbar a {
+  color: rgb(212, 17, 17);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a.active {
+  text-decoration: underline;
+}
+
+main {
+  padding: 2rem;
+  position: relative;
+  z-index: 20;
+  background-color: transparent;
+  border-radius: 8px;
+  border: 1px solid transparent;
+}
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  border: transparent;
+  background-color:transparent;
+  color: #333;
+  font-weight: bold;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+  0%   { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+h1, h2 {
+  text-decoration: underline;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+button, input[type="submit"], input[type="button"], input[type="reset"] {
+  background-color: #4CAF50;
+  border: none;
+  color: rgb(214, 26, 26);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition-duration: 0.4s;
+}
+
+.navbar button {
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(212, 17, 17);
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  margin: 0;
+}
+
+button:hover, input[type="submit"]:hover, input[type="button"]:hover, input[type="reset"]:hover {
+  background-color: #45a049;
+}
+
+input[type="text"], input[type="email"], input[type="password"], textarea {
+  padding: 8px;
+  margin: 6px 0 12px 0;
+  border: 1px solid #dc0707;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+  width: 40%;
+}
