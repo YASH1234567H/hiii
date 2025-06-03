@@ -4,7 +4,7 @@
   padding: 20px;
   max-width: 600px;
   margin: 0 auto;
-  background-color:transperent;
+  background-color: transparent;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -53,4 +53,21 @@ p {
   color: rgb(143, 231, 12);
   font-size: 0.9rem;
   margin-top: 5px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .form-container {
+    padding: 15px;
+    max-width: 90%;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    width: 100%;
+    font-size: 1rem;
+  }
 }
